@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.utils.translation import gettext_lazy as _
 
-from apps.users.api_endpoints.registration.SetPassword.serializer import SetPasswordSerializer
+from apps.users.api_endpoints.registration.SetPassword.serializers import SetPasswordSerializer
 from apps.users.models import CustomUser
 
 
