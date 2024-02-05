@@ -1,0 +1,9 @@
+django-modeltranslation==0.18.11
+phonenumbers==8.13.29
+django-phonenumber-field==7.3.0
+djangorestframework==3.14.0
+django-ckeditor==6.7.0
+drf-yasg==1.21.7
+pillow==10.2.0
+sorl-thumbnail==12.10.0
+django-redis==5.4.0
