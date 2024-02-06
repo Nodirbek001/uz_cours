@@ -8,6 +8,7 @@ from apps.users.api_endpoints.registration import SetPassword
 from apps.users.api_endpoints.profile import ChangePassword
 from apps.users.api_endpoints.profile import GetProfile
 from apps.users.api_endpoints.profile import UpdateProfile
+from apps.users.api_endpoints.profile import Logout
 
 urlpatterns = [
     # registiration
@@ -24,5 +25,7 @@ urlpatterns = [
     path("profile/change-password/", profile.ChangePassword.ChangePasswordAPIView.as_view(),
          name="profile-change-password"),
     path("profile/get-profile/", profile.GetProfile.GetProfileAPIView.as_view(), name="profile-get-profile"),
-    path("profile/update/", profile.UpdateProfile.UpdateProfileAPIView.as_view(), name="profile-update-profile")
+    path("profile/update/", profile.UpdateProfile.UpdateProfileAPIView.as_view(), name="profile-update"),
+    #log out
+    path("profile/logout/", profile.Logout.LogoutAPIView.as_view(), name="profile-logout")
 ]
