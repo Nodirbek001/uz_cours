@@ -28,4 +28,7 @@ urlpatterns = [
     path("profile/update/", profile.UpdateProfile.UpdateProfileAPIView.as_view(), name="profile-update"),
     #log out
     path("profile/logout/", profile.Logout.LogoutAPIView.as_view(), name="profile-logout")
+    #change phone number or email
+    #number
+
 ]
