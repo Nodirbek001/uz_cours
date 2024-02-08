@@ -1,0 +1,386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-08 15:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: apps/common/models.py:7
+msgid "Created date"
+msgstr ""
+
+#: apps/common/models.py:8
+msgid "Updated date"
+msgstr ""
+
+#: apps/course/models.py:15 apps/course/models.py:27 apps/course/models.py:39
+#: apps/course/models.py:60 apps/course/models.py:72 apps/course/models.py:84
+msgid "Title"
+msgstr ""
+
+#: apps/course/models.py:16 apps/course/models.py:28
+msgid "Icon"
+msgstr ""
+
+#: apps/course/models.py:19 apps/course/models.py:46
+msgid "Category"
+msgstr ""
+
+#: apps/course/models.py:20
+msgid "Categories"
+msgstr ""
+
+#: apps/course/models.py:31 apps/course/models.py:48
+msgid "Level"
+msgstr ""
+
+#: apps/course/models.py:32
+msgid "Levels"
+msgstr ""
+
+#: apps/course/models.py:40 apps/course/models.py:117
+msgid "Author"
+msgstr ""
+
+#: apps/course/models.py:41
+msgid "Language"
+msgstr ""
+
+#: apps/course/models.py:42
+msgid "Price"
+msgstr ""
+
+#: apps/course/models.py:43 apps/course/models.py:46
+msgid "Discounted"
+msgstr ""
+
+#: apps/course/models.py:48
+msgid "level"
+msgstr ""
+
+#: apps/course/models.py:49
+msgid "Is Free"
+msgstr ""
+
+#: apps/course/models.py:52 apps/course/models.py:61 apps/course/models.py:73
+#: apps/course/models.py:123 apps/course/models.py:152
+#: apps/course/models.py:185
+msgid "Course"
+msgstr ""
+
+#: apps/course/models.py:53
+msgid "Courses"
+msgstr ""
+
+#: apps/course/models.py:64 apps/course/models.py:76 apps/course/models.py:86
+msgid "Chapter"
+msgstr ""
+
+#: apps/course/models.py:65 apps/course/models.py:77
+msgid "Chapters"
+msgstr ""
+
+#: apps/course/models.py:85
+msgid "Body Text"
+msgstr ""
+
+#: apps/course/models.py:87
+msgid "Video Path"
+msgstr ""
+
+#: apps/course/models.py:88
+msgid "Video Duration"
+msgstr ""
+
+#: apps/course/models.py:89
+msgid "Video thumbnail"
+msgstr ""
+
+#: apps/course/models.py:92 apps/course/models.py:102
+msgid "Video"
+msgstr ""
+
+#: apps/course/models.py:93
+msgid "Videos"
+msgstr ""
+
+#: apps/course/models.py:100 apps/course/models.py:151
+#: apps/course/models.py:184 apps/course/models.py:202
+msgid "User"
+msgstr ""
+
+#: apps/course/models.py:104
+msgid "Last Watched Time"
+msgstr ""
+
+#: apps/course/models.py:105 apps/course/models.py:153
+msgid "Finished"
+msgstr ""
+
+#: apps/course/models.py:106
+msgid "Progress"
+msgstr ""
+
+#: apps/course/models.py:109
+msgid "VideoUserView"
+msgstr ""
+
+#: apps/course/models.py:110
+msgid "VideoUserViews"
+msgstr ""
+
+#: apps/course/models.py:118
+msgid "course_comment_author"
+msgstr ""
+
+#: apps/course/models.py:119
+msgid "Rating"
+msgstr ""
+
+#: apps/course/models.py:121
+msgid "Status"
+msgstr ""
+
+#: apps/course/models.py:122
+msgid "Comment Text"
+msgstr ""
+
+#: apps/course/models.py:126
+msgid "Course comment"
+msgstr ""
+
+#: apps/course/models.py:127
+msgid "Course comments"
+msgstr ""
+
+#: apps/course/models.py:134
+msgid "Comment"
+msgstr ""
+
+#: apps/course/models.py:136 apps/users/models.py:25
+msgid "user"
+msgstr ""
+
+#: apps/course/models.py:138
+msgid "Complaint Type"
+msgstr ""
+
+#: apps/course/models.py:140
+msgid "Complaint Text"
+msgstr ""
+
+#: apps/course/models.py:143
+msgid "CourseComment Complaint"
+msgstr ""
+
+#: apps/course/models.py:144
+msgid "CourseComment Complaints"
+msgstr ""
+
+#: apps/course/models.py:156
+msgid "User course"
+msgstr ""
+
+#: apps/course/models.py:157
+msgid "User courses"
+msgstr ""
+
+#: apps/course/models.py:165
+msgid "User Course"
+msgstr ""
+
+#: apps/course/models.py:167
+msgid "Amount"
+msgstr ""
+
+#: apps/course/models.py:169
+msgid "Payment type"
+msgstr ""
+
+#: apps/course/models.py:172
+msgid "Payment status"
+msgstr ""
+
+#: apps/course/models.py:174
+msgid "Payment date"
+msgstr ""
+
+#: apps/course/models.py:177
+msgid "Payment"
+msgstr ""
+
+#: apps/course/models.py:178
+msgid "Payments"
+msgstr ""
+
+#: apps/course/models.py:186 apps/users/models.py:17
+msgid "Full Name"
+msgstr ""
+
+#: apps/course/models.py:187
+msgid "CID"
+msgstr ""
+
+#: apps/course/models.py:188
+msgid "File"
+msgstr ""
+
+#: apps/course/models.py:189
+msgid "Image"
+msgstr ""
+
+#: apps/course/models.py:195
+msgid "Certificate"
+msgstr ""
+
+#: apps/course/models.py:196
+msgid "Certificates"
+msgstr ""
+
+#: apps/course/models.py:205 apps/course/models.py:212
+msgid "Favourite Course"
+msgstr ""
+
+#: apps/course/models.py:213
+msgid "Favourite Courses"
+msgstr ""
+
+#: apps/users/api_endpoints/change_email/SendVerificationCode/serializers.py:18
+msgid "Your password is incorrect."
+msgstr ""
+
+#: apps/users/api_endpoints/change_email/SendVerificationCode/serializers.py:20
+msgid "This email is unavailable"
+msgstr ""
+
+#: apps/users/api_endpoints/change_email/SendVerificationCode/views.py:40
+msgid "Verification code was send successfully"
+msgstr ""
+
+#: apps/users/api_endpoints/change_email/VerifyCode/views.py:25
+msgid "Verification code is expired!"
+msgstr ""
+
+#: apps/users/api_endpoints/change_email/VerifyCode/views.py:29
+msgid "Your verification code is incorrect."
+msgstr ""
+
+#: apps/users/api_endpoints/change_email/VerifyCode/views.py:34
+msgid "Your email changed successfully"
+msgstr ""
+
+#: apps/users/api_endpoints/change_phone_number/SendVerificationCode/serializers.py:20
+msgid "You password is incorrect."
+msgstr ""
+
+#: apps/users/api_endpoints/change_phone_number/SendVerificationCode/serializers.py:22
+msgid "This phone number is unvailable"
+msgstr ""
+
+#: apps/users/api_endpoints/change_phone_number/SendVerificationCode/views.py:39
+msgid "Verification code was sent successfully."
+msgstr ""
+
+#: apps/users/api_endpoints/change_phone_number/VerifyCode/views.py:26
+msgid "Verify code is expired"
+msgstr ""
+
+#: apps/users/api_endpoints/change_phone_number/VerifyCode/views.py:28
+msgid "Verify code is incorrect"
+msgstr ""
+
+#: apps/users/api_endpoints/change_phone_number/VerifyCode/views.py:32
+msgid "Your phone number changed successfully"
+msgstr ""
+
+#: apps/users/api_endpoints/profile/ChangePassword/serializers.py:15
+msgid "You password is incorrect"
+msgstr ""
+
+#: apps/users/api_endpoints/profile/ChangePassword/serializers.py:17
+msgid "You password does not match"
+msgstr ""
+
+#: apps/users/api_endpoints/profile/ChangePassword/views.py:23
+msgid "Success change your password"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SendVerificationCode/serializers.py:27
+msgid "You can enter only one of phone number and email at a time!"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SendVerificationCode/serializers.py:31
+msgid "This number is already taken"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SendVerificationCode/serializers.py:36
+msgid "This email is already taken"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SendVerificationCode/serializers.py:40
+msgid "You must enter phone number or email"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SetPassword/serializers.py:13
+msgid "Passwords don't match"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SetPassword/views.py:24
+msgid "Invalid session"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/SetPassword/views.py:27
+msgid "User is not virefied"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/VerifyCode/views.py:23
+msgid "varification code expired or email/phone_number invalid"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/VerifyCode/views.py:28
+msgid "Incorrect code"
+msgstr ""
+
+#: apps/users/api_endpoints/registration/VerifyCode/views.py:35
+msgid "You verification code successfully"
+msgstr ""
+
+#: apps/users/models.py:19
+msgid "Birth Date"
+msgstr ""
+
+#: apps/users/models.py:20
+msgid "Email"
+msgstr ""
+
+#: apps/users/models.py:21
+msgid "phone number"
+msgstr ""
+
+#: apps/users/models.py:26
+msgid "users"
+msgstr ""
+
+#: uz_cours/settings.py:153
+msgid "English"
+msgstr ""
+
+#: uz_cours/settings.py:154
+msgid "Русский"
+msgstr ""
+
+#: uz_cours/settings.py:155
+msgid "O'zbekcha"
+msgstr ""

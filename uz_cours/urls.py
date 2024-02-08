@@ -23,7 +23,7 @@ from django.urls import path, include, re_path
 from uz_cours.schema import swagger_urlpatterns
 
 urlpatterns = [
-    path("I18n/", include("django.conf.urls.i18n")),
+    path("i18n/", include("django.conf.urls.i18n")),
     path('api/v1/', include('apps.v1')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]

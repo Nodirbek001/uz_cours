@@ -16,7 +16,7 @@ class SendVerificationAPICodeView(APIView):
     permission_classes = [IsAuthenticated]
     authentication_classes = [TokenAuthentication]
 
-    @swagger_auto_schema(request_body=SendVerificationCodeSerializer)
+    #@swagger_auto_schema(request_body=SendVerificationCodeSerializer)
     def post(self, request, *args, **kwargs):
         serializer = SendVerificationCodeSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)

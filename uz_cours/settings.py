@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 from uz_cours.ckeditor import *
 from uz_cours.schema import *
@@ -49,7 +49,10 @@ THIRD_PARTY_APPS = [
     'ckeditor',
     'rest_framework',
     'rest_framework.authtoken',
-    'sorl.thumbnail'
+    'sorl.thumbnail',
+    'rosetta',
+    'modeltranslation',
+
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + CUSTOM_APPS
 
@@ -61,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'uz_cours.urls'
@@ -139,6 +143,21 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en-us'
+MODELTRANSLATION_LANGUAGES = ("en-us", "uz", "ru")
+MODELTRANSLATION_FALLBACK_LANGUAGE = ("en-us", "uz", "ru")
+
+
+def gettext(s):
+    return s
+
+
+LANGUAGES = (
+    ('en-us', gettext('English')),
+    ("ru", gettext("Русский")),
+    ("uz", gettext("O'zbekcha"))
+)
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 AUTH_USER_MODEL = 'users.CustomUser'
 CACHES = {
