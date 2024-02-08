@@ -42,8 +42,11 @@ class Course(TimeStampedModel):
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=_("Price"), blank=True, null=True)
     discounted_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=_("Discounted"), blank=True,
                                            null=True)
-    discounted_expire_price = models.ForeignKey(
+    discounted_expire_date = models.ForeignKey(
         CourseCategory, on_delete=models.CASCADE, verbose_name=_("Discounted"), related_name=_("Category")
+    )
+    category = models.ForeignKey(
+        CourseCategory, on_delete=models.CASCADE, related_name="category", verbose_name=_("Category")
     )
     level = models.ForeignKey(CourseLevel, on_delete=models.CASCADE, verbose_name=_("level"), related_name=_("Level"))
     is_free = models.BooleanField(default=False, verbose_name=_("Is Free"))
@@ -179,6 +182,7 @@ class Payment(TimeStampedModel):
 
     def __str__(self):
         return str(self.id)
+
 
 class Certificate(TimeStampedModel):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="certificates", verbose_name=_("User"))
