@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework.authtoken import views
 
-from apps.users.api_endpoints import registration, profile, change_phone_number
+from apps.users.api_endpoints import registration, profile, change_phone_number, change_email
 from apps.users.api_endpoints.registration import SendVerificationCode
 from apps.users.api_endpoints.registration import VerifyCode
 from apps.users.api_endpoints.registration import SetPassword
@@ -9,8 +9,6 @@ from apps.users.api_endpoints.profile import ChangePassword
 from apps.users.api_endpoints.profile import GetProfile
 from apps.users.api_endpoints.profile import UpdateProfile
 from apps.users.api_endpoints.profile import Logout
-from apps.users.api_endpoints.change_phone_number import SendVerificationCode
-from apps.users.api_endpoints.change_phone_number import VerifyCodeAPIView
 
 urlpatterns = [
     # registiration
@@ -36,5 +34,8 @@ urlpatterns = [
          change_phone_number.SendVerificationCode.SendVerificationCodeAPIView.as_view(),
          name="phone-send-verification-code"),
     path("phone/verify-code/", change_phone_number.VerifyCodeAPIView.as_view(), name="phone-verify-code"),
-
+    # email
+    path("email/change-email/send-verification-code/", change_email.SendVerificationAPICodeView.as_view(),
+         name="email-send-verification-code"),
+    path("email/change-email/send-verification-code/", change_email.VerifyCodeAPIView.as_view(), name="email"),
 ]
