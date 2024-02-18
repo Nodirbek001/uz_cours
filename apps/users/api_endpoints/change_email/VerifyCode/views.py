@@ -13,7 +13,7 @@ class VerifyCodeAPIView(APIView):
     permission_classes = [IsAuthenticated]
     authentication_classes = [TokenAuthentication]
 
-    #@swagger_auto_schema(request_body=VerifyCodeSerializer)
+    @swagger_auto_schema(request_body=VerifyCodeSerializer)
     def post(self, request, *args, **kwargs):
         serializer = VerifyCodeSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
