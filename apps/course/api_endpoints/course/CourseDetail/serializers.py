@@ -42,7 +42,7 @@ class ChapterForCourseDetailSerializer(serializers.ModelSerializer):
 class CourseDetailSerializer(serializers.ModelSerializer):
     category = CourseCategoryShortSerializer()
     comments_count = serializers.SerializerMethodField()
-    review_count = serializers.SerializerMethodField()
+    reviews_avg = serializers.SerializerMethodField()
     is_bought = serializers.SerializerMethodField()
     chapters = serializers.SerializerMethodField()
     comments = serializers.SerializerMethodField()
